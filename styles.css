@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: #111;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* ANIMACIÓN FLOTANTE */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Carta */
+  .envelope {
+    width: 389px;
+    height: 200px;
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    margin-bottom: 50px;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 190px solid transparent;
+    border-right: 190px solid transparent;
+    border-bottom: 120px solid #f2f2f2;
+  }
+  
+  .heart {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: crimson;
+    z-index: 2;
+  }
+  
+  /* Caja de pregunta */
+  .message {
+    background: #f2f2f2;
+    padding: 20px;
+    width: 350px;
+    border-radius: 12px;
+    color: #222;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .message input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .message button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Mensaje final */
+  .final-message {
+    margin-top: 30px;
+    background-color: #ffe9f0;
+    color: #2c2c2c;
+    padding: 30px;
+    width: 326px;
+    font-size: 18px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(255, 0, 90, 0.4);
+  }
+  
+  /* Oculto por defecto */
+  .hidden {
+    display: none;
+  }
+  

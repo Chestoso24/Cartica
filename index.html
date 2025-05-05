@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta Especial</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="envelope" onclick="showPrompt()">
+      <div class="flap"></div>
+      <div class="heart">❤</div>
+    </div>
+
+    <div class="message hidden" id="messageBox">
+      <p>¿Cuál es la palabra secreta?</p>
+      <input type="text" id="inputCode" placeholder="Escribe aquí...">
+      <button onclick="validateCode()">Enviar</button>
+    </div>
+
+    <div class="final-message hidden" id="finalBox">
+      🎉 ¡Feliz cumpleaños!  
+      <br><br>
+      Yo te amo a pesar de no estar a su lado,  
+      <br>
+      y de no poder estar juntos...  
+      <br>
+      Espero tenga un lindo dia mi amor ... Cdtm  
+      <br>
+      <strong>Te quiero mucho ❤️ Elizabet </strong>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="romanticAudio" src="romantica.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
